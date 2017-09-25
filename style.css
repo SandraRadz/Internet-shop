@@ -1,0 +1,223 @@
+.main{
+    background: #D3D3D3; /*#D3D3D3;*/
+    margin: 0px;
+    margin-right: 43px;
+    margin-left: 43px;
+    padding-top: 100px;
+    }
+.tables{
+    width: 1263px;
+    }
+
+.table1{
+    width: 823px;
+    height: 200px;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    }
+
+.table2{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    }
+
+
+.big_line_of_table1{
+    border: 1px solid black;
+    background: white;
+    padding: 20px;
+    height: 50px;
+}
+.simple_line_of_table1{
+    border: 1px solid black;
+    background: white;
+    height: 50px;
+    padding: 14px;
+
+}
+
+.simple_line_of_table2{
+    border: 1px solid black;
+    background: white;
+    height: 50px;
+    padding: 10px;
+   /* font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 18pt; */
+    font-weight: bold;
+    text-align: center;
+    padding: 14px;
+}
+
+.not_bought_product{
+    border:1px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.cell{
+    display: inline-block;
+    width: 270px;
+    border-collapse: collapse;
+}
+
+.simple_textarea{
+    display: inline-block;
+    padding: 10px;
+    border: 1px;
+}
+
+.big_textarea{
+    padding: 14px;
+    display: inline-block;
+    width: 80%;
+    border-width: 0.5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    vertical-align: middle;
+ }
+
+
+.button_add{
+    padding: 14px;
+    display: inline-block;
+    width: 15%;
+    color: white;
+    background: dodgerblue;
+    border: none;
+    vertical-align: middle;
+    box-shadow: inset;
+}
+
+.button_minus{
+    height: 30px;
+    width: 30px;
+    border-radius: 10em;
+    border: none;
+    background: red;
+    vertical-align: middle;
+    color: white;
+    font-family:Tahoma, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+
+}
+
+.button_result{
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    border: none;
+    vertical-align: middle;
+    font-family:Tahoma, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.button_plus{
+    height: 30px;
+    width: 30px;
+    border-radius: 10em;
+    border: none;
+    background: green;
+    vertical-align: middle;
+    color: white;
+    font-family:Tahoma, sans-serif;
+    font-size:15px;
+    font-weight:bold;
+}
+
+.button_buy{
+     padding: 14px;
+     display: inline-block;
+     width: 100px;
+    height: 40px;
+    vertical-align: middle;
+     border: none;
+    margin-right: 0px;
+    border-radius: 5px;
+ }
+
+.button_cross{
+    padding: 14px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: white;
+    vertical-align: middle;
+    /*background: linear-gradient(to top, black, red);*/
+    background: red;
+    border: none;
+    margin-right: 0px;
+    border-radius: 5px;
+}
+
+.badge{  /* вспливаючий бейдж*/
+    position: fixed;
+    bottom: -130px;
+    left: 20px;
+    width: 100px;
+    height: 180px;
+    color: white;
+    background: deeppink;
+    text-align: center;
+    font-size: 25px;
+    font-family: Tahoma;
+    padding: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: all 1s ease ;
+}
+
+.badge .created{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.badge:hover{
+ /*   bottom: 0px;*/
+    transform: translateY(-130px);
+    background: blue;
+}
+
+@media print {
+.badge .title{
+    display: none;
+}
+    .badge{
+        color: black;
+        border: 3px solid black;
+    }
+}
+
+@media (max-width: 600px){
+
+}
+
+input{
+    padding: 5px;
+}
+
+.not_bought_product{
+    border: none;
+    background: gainsboro;
+    border-radius: 5px;
+    margin: 1.3px;
+    margin-bottom: 3px;
+    margin-top: 0px;
+}
+
+.circular_label_of_not_bought_product{
+    width: 20px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: orange;
+    color: white;
+    text-align: center;
+    margin-left: 1.3px;
+    padding: 4.5px;
+}
