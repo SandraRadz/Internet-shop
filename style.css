@@ -1,158 +1,337 @@
-.main{
-    background: #D3D3D3; /*#D3D3D3;*/
+*{
+    font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+html{
+    width: auto;
+    height: 100%;
+}
+body{
+   background: ghostwhite;
+    margin:0px;
+}
+.whole_area{
     margin: 0px;
-    margin-right: 43px;
-    margin-left: 43px;
+    padding: 0px;
+    margin-left: 14px;
+    margin-right: 14px;
     padding-top: 100px;
-    }
+}
+
 .tables{
-    width: 1263px;
-    }
+    margin-top: -14px;
+    margin-bottom: -14px;
 
-.table1{
-    width: 823px;
-    height: 200px;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 20px;
-    }
-
-.table2{
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    }
-
-
-.big_line_of_table1{
-    border: 1px solid black;
-    background: white;
-    padding: 20px;
-    height: 50px;
 }
-.simple_line_of_table1{
-    border: 1px solid black;
-    background: white;
-    height: 50px;
+.first_table{
+    display: inline-block;
     padding: 14px;
+    width: 836px; /*не поміщається*/
 
 }
 
-.simple_line_of_table2{
+.first_table_centre{
     border: 1px solid black;
+    border-radius: 5px;
     background: white;
-    height: 50px;
-    padding: 10px;
-   /* font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
-    font-size: 18pt; */
-    font-weight: bold;
+    box-shadow: rgba(34, 36, 38, 0.15) 5px 5px 4px 0px;
+}
+
+.second_table{
+    padding: 14px;
+    display: inline-block;
+    width: 377px;
+}
+
+.second_table_centre{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    box-shadow: rgba(34, 36, 38, 0.15) 5px 5px 4px 0px;
+}
+
+.top_line_of_table1{
+    height: 80px;
+    width: 834px;
+    padding: 14px;
+    position: relative;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.line_of_table1{
+    height: 80px;
+    width: 834px;
+    padding: 14px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid black;
+}
+
+.top_line_of_table2{
+    height: 80px;
+    width: 375px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 14px;
+    align-items: center;
+}
+
+
+.line_of_table2{
+    height: auto;
+    width: 375px;
+    padding: 14px;
+    box-sizing: border-box;
+    position: relative;
+    border-top: 1px solid black;
+    line-height: 20px;
+    padding: 14px;
+}
+
+.centre_of_top_line1{
+    display: flex;
+    line-height: 19.999px;
+    position: relative;
+    text-size-adjust: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.centre_of_line1 {
+    margin: -14px;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    height: 100%;
+
+}
+
+.cell_name_of_goods{
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 14px;
+    height: 100%;
+    align-items: stretch;
+    position: relative;
+
+}
+
+.cell_with_count_buttons{
+    display: inline-block;
+    width: 37%;
+    box-sizing: border-box;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    height: 100%;
+    align-items: stretch;
+    position: relative;
     text-align: center;
-    padding: 14px;
+
 }
 
-.not_bought_product{
-    border:1px;
-    padding: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
+.cell_with_button_buy{
+    display: inline-block;
+    width: 37%;
+    box-sizing: border-box;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 7px;
+    height: 100%;
+    align-items: stretch;
+    position: relative;
+    text-align: right;
 }
 
-.cell{
-    display: inline-block;
-    width: 270px;
-    border-collapse: collapse;
+.big_text_area{
+    padding-top: 9.501px;
+    padding-bottom: 9.501px;
+    padding-right: 14px;
+    padding-left: 14px;
+    border: 1px solid gainsboro;
+    cursor: auto;
+    width: 85%;
+
 }
 
-.simple_textarea{
-    display: inline-block;
-    padding: 10px;
-    border: 1px;
-}
-
-.big_textarea{
-    padding: 14px;
-    display: inline-block;
-    width: 80%;
-    border-width: 0.5px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    vertical-align: middle;
- }
-
-
-.button_add{
-    padding: 14px;
-    display: inline-block;
+.add{
     width: 15%;
+    background-color: rgb(33, 133, 208);
+    vertical-align: middle;
+    border-bottom-right-radius: 4px;
+
+    box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;
+    text-align: center;
+    position: relative;
+    text-decoration-style: solid;
+    border: none;
     color: white;
-    background: dodgerblue;
-    border: none;
-    vertical-align: middle;
-    box-shadow: inset;
-}
-
-.button_minus{
-    height: 30px;
-    width: 30px;
-    border-radius: 10em;
-    border: none;
-    background: red;
-    vertical-align: middle;
-    color: white;
-    font-family:Tahoma, sans-serif;
-    font-size:15px;
-    font-weight:bold;
+    box-sizing: border-box;
+    font-weight: bold;
 
 }
 
-.button_result{
-    height: 25px;
-    width: 25px;
-    border-radius: 5px;
-    border: none;
-    vertical-align: middle;
-    font-family:Tahoma, sans-serif;
-    font-size:15px;
-    font-weight:bold;
+.list_to_buy{
+
 }
 
-.button_plus{
-    height: 30px;
-    width: 30px;
-    border-radius: 10em;
-    border: none;
-    background: green;
-    vertical-align: middle;
-    color: white;
-    font-family:Tahoma, sans-serif;
-    font-size:15px;
-    font-weight:bold;
+.name_of_bought_good{
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    text-size-adjust: 100%;
 }
-
-.button_buy{
-     padding: 14px;
-     display: inline-block;
-     width: 100px;
-    height: 40px;
-    vertical-align: middle;
-     border: none;
-    margin-right: 0px;
-    border-radius: 5px;
- }
-
-.button_cross{
-    padding: 14px;
+.one_bought_good{
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding-top: 5.250px;
+    padding-bottom: 5.250px;
+    padding-left: 7.497px;
+    padding-right: 7.497px;
+    margin-bottom: 3px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    text-decoration-style: solid;
+    border: none;
+    font-size: 12px;
+    color:black;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+
+}
+.count_of_bought_good{
+    box-sizing: border-box;
+    padding: 4.5px;
+    padding-top: 4.5px;
+    padding-bottom: 6px;
+    margin-left: 1.278px;
+    display: inline-block;
+    border-radius: 7000px;
+    background: orange;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    text-align: center;
     color: white;
+    height: 18px;
+    width: 18px;
     vertical-align: middle;
-    /*background: linear-gradient(to top, black, red);*/
-    background: red;
+    text-align: center;
+    position: relative;
+}
+
+
+.minus{
+    align-items: flex-start;
+    background-color: red;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 2.5px;
+    padding: 8px;
+    padding-bottom: 12.5px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 100px;
+    box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
     border: none;
-    margin-right: 0px;
-    border-radius: 5px;
+    text-decoration-style: solid;
+}
+
+.count_of_good{
+    background-color: rgb(248, 248, 248);
+    margin-right: 1.714px;
+    margin-left: 1.714px;
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left: 12.996px;
+    padding-right: 9.996px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 4px;
+   /* box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;*/
+    text-align: center;
+    position: relative;
+    text-decoration-style: solid;
+    border: none;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.plus{
+    align-items: flex-start;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 2.5px;
+    padding: 10px;
+    padding-bottom: 11.5px;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 100px;
+    box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;
+    text-align: center;
+    border: none;
+    font-weight: bold;
+}
+
+.bought{
+    padding-top: 10px;
+    padding-bottom: 11.5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 2.5px;
+    align-items: flex-start;
+    color:rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(248, 248, 248);
+    vertical-align: middle;
+    border-radius: 4px;
+    box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;
+    text-align: center;
+    position: relative;
+    border: none;
+    color:rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+
+.cross{
+    padding-top: 10px;
+    padding-bottom: 11.5px;
+    padding-right: 10px;
+    padding-left: 16px;
+    margin: 2.5px;
+    align-items: flex-start;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: gainsboro;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-shadow: rgba(34, 36, 38, 0.15) 0px -0.3em 0px 0px inset;
+    text-align: left;
+    position: relative;
+    font-weight: bold;
+    border: none;
+    horiz-align: center;
+    color: white;
+    box-sizing: border-box;
+    background: red;
+
 }
 
 .badge{  /* вспливаючий бейдж*/
@@ -169,7 +348,12 @@
     padding: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    transition: all 1s ease ;
+    transition: all 1s ease; /*Устанавливает эффект перехода между двумя состояниями элемента,
+    они могут быть определены с помощью псевдоэлемента :hover или :active*/
+}
+.badge .title{
+    font-size: 25px;
+    padding-top: 10px;
 }
 
 .badge .created{
@@ -178,46 +362,56 @@
 }
 
 .badge:hover{
- /*   bottom: 0px;*/
+    /*  опис змін*/
     transform: translateY(-130px);
     background: blue;
-}
 
-@media print {
-.badge .title{
-    display: none;
 }
+/*вид друку*/
+@media print {
+    .badge .title{
+        display: none;/*не відображаємо назву*/
+    }
+
     .badge{
         color: black;
         border: 3px solid black;
+        height: 210px;
+
     }
 }
 
 @media (max-width: 600px){
+    .left-column {
+        width: 100%;
+    }
 
+    .right-column {
+        width: 100%;
+    }
 }
 
-input{
-    padding: 5px;
+.tooltip {
+    border-bottom: 1px;
 }
 
-.not_bought_product{
-    border: none;
-    background: gainsboro;
-    border-radius: 5px;
-    margin: 1.3px;
-    margin-bottom: 3px;
-    margin-top: 0px;
-}
-
-.circular_label_of_not_bought_product{
-    width: 20px;
-    height: 10px;
-    border: 1px solid black;
-    border-radius: 20px;
-    background: orange;
+.tooltip::after {
+    background: rebeccapurple;
+    border-radius: 8px 8px 8px 8px;
     color: white;
-    text-align: center;
-    margin-left: 1.3px;
-    padding: 4.5px;
+    content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+    margin-top: -25px;
+    margin-left: -38px;
+    padding-left: 7px;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom: 3px;
+    position: absolute;
+    visibility: hidden; /* скрыт. */
 }
+
+.tooltip:hover::after {
+    opacity: 1; /* Показываем его */
+    visibility: visible;
+}
+
