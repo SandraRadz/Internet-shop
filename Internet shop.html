@@ -14,7 +14,7 @@
 
             <div class="top_line_of_table1">
                <div class="centre_of_top_line1">
-               <input class="big_text_area" type="text" placeholder="Назва товару">
+               <input id="big_text_area" type="text" placeholder="Назва товару">
                    <button class="add"> Додати </button>
                </div>
             </div>
@@ -30,7 +30,7 @@
                         <span class="tooltip" data-tooltip="Збільшити">  <button class="plus"> + </button></span>
                     </div>
                     <div class="cell_with_button_buy">
-                        <button class="bought">Куплено</button>
+                        <button class="buy">Куплено</button>
                         <span class="tooltip" data-tooltip="Видалити">  <button class="cross"> x</button> </span>
                     </div>
                 </div>
@@ -43,11 +43,11 @@
                     </div>
                     <div class="cell_with_count_buttons">
                         <span class="tooltip" data-tooltip="Зменшити">  <button class="minus"> - </button> </span>
-                        <span class="tooltip" data-tooltip="Кількість товару">  <span class="count_of_good"> 2 </span> </span>
+                        <span class="tooltip" data-tooltip="Кількість товару">  <span class="count_of_good" > 2 </span> </span>
                         <span class="tooltip" data-tooltip="Збільшити">  <button class="plus"> + </button></span>
                     </div>
                     <div class="cell_with_button_buy">
-                        <button class="bought">Куплено</button>
+                        <button class="buy">Куплено</button>
                         <span class="tooltip" data-tooltip="Видалити">  <button class="cross"> x</button> </span>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                         <span class="tooltip" data-tooltip="Збільшити">  <button class="plus"> + </button></span>
                     </div>
                     <div class="cell_with_button_buy">
-                        <button class="bought">Куплено</button>
+                        <button class="buy">Куплено</button>
                         <span class="tooltip" data-tooltip="Видалити">  <button class="cross"> x</button> </span>
                     </div>
                 </div>
@@ -80,35 +80,29 @@
             </div>
 
             <div class="line_of_table2">
-                <div class="list_to_buy">
-                <span class="one_bought_good">
-                    <span class="name_of_bought_good">Шинка</span>
-                    <span class="count_of_bought_good">3</span>
-                </span>
-                    <span class="one_bought_good">
-                    <span class="name_of_bought_good">Вода</span>
-                    <span class="count_of_bought_good">2</span>
-                </span>
-                    <span class="one_bought_good">
-                    <span class="name_of_bought_good">Чай</span>
+                <div class="list_to_buy_second_table">
+
+                    <div class="one_bought_good">
+                        <span class="label_js">
+                    <span class="name_of_bought_good">Помідори</span>
                     <span class="count_of_bought_good">1</span>
-                </span>
+                        </span>
+                </div>
+
+                    <div class="one_bought_good">
+                        <span class="label_js">
+                        <span class="name_of_bought_good">Сир</span>
+                        <span class="count_of_bought_good">1</span>
+                        </span>
+                    </div>
+
                     <span class="one_bought_good">
-                    <span class="name_of_bought_good">Чай</span>
-                    <span class="count_of_bought_good">1</span>
-                </span>
-                    <span class="one_bought_good">
-                    <span class="name_of_bought_good">Чай</span>
-                    <span class="count_of_bought_good">1</span>
-                </span>
-                    <span class="one_bought_good">
-                    <span class="name_of_bought_good">Чай</span>
-                    <span class="count_of_bought_good">1</span>
-                </span>
-                    <span class="one_bought_good">
-                    <span class="name_of_bought_good">Чай</span>
-                    <span class="count_of_bought_good">1</span>
-                </span>
+                        <span class="label_js">
+                        <span class="name_of_bought_good">Масло</span>
+                        <span class="count_of_bought_good">1</span>
+                        </span>
+                    </span>
+
 
                 </div>
             </div>
@@ -118,7 +112,10 @@
             </div>
 
             <div class="line_of_table2">
+                <div class="list_of_bought">
 
+
+                    </div>
             </div>
 
         </div>
@@ -130,6 +127,12 @@
     <div class="title"> Buy List </div>
     <div class="created"> Created by Oleksandra Radzievska </div>
 </div>
+
+<script	type="text/javascript" src="jQuery.js"></script>
+
+<script	type="text/javascript" src="main.js"></script>
+
+
 
 </body>
 </html>
