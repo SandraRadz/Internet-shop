@@ -71,15 +71,22 @@ $(document).ready(function(){
                     });
 
               $node.find(".list_to_buy").click(function () {
-                  alert("sdf");
+                  $node.find('.list_to_buy').hide();
+                  $node.find('.change').show();
+                  $node.find('.change').focus();
+                  $node.find(".change").val($node.find('.list_to_buy').text());
+                  $node.find('.change').css('font-size', '12px');
 
+                  $(document).mouseup(function (e) {
+                      $node.find('.list_to_buy').show();
+                      $node.find('.change').hide();
+                      $node.find(".list_to_buy").text($node.find('.change').val());
+                      $lab_node.find(".name_of_bought_good").text($node.find('.change').val());
+                  });
 
-                  $(this).setAttribute('type', 'input');
+              });
 
-               });
-
-
-
+                $('.big_text_area').focus();
                 $(".big_text_area").val(null);
             $not_bought.append($lab_node);
             $list.append($node);
@@ -92,6 +99,14 @@ $(document).ready(function(){
         addItem(new_name);
 
     });
+
+    $('html').keydown(function(eventObject){
+        if (eventObject.keyCode == 13) {
+            var new_name = $new_input.val();
+            addItem(new_name);
+        }
+    });
+
 
     addItem("Помідори");
     addItem("Cup");
